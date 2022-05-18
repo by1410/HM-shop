@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M's Pet</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="preloader()">
+
+    <div class="loading"></div>
+
+     <!-- overplay -->
+     <div class="overplay"></div>
+
+    <div class="app">
+        <header class="header">
+            <div class="grid header-grid">
+                <div class="header-left">
+                    <a href="index.html">
+                        <img src="./assets/img/logo-demo.png" alt="" class="header-left__logo">
+                    </a>
+                </div>
+                <div class="header-mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="header-right">
+                    <ul class="header-right__list">
+                        <li class="home header-right__item">
+                            <a onclick="return false" href="">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="intro header-right__item">
+                            <a onclick="return false" href="">
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li class="pet header-right__item">
+                            <a onclick="return false" href="">
+                                Thú cưng
+                            </a>
+                        </li>
+                        <li class="contact header-right__item">
+                            <a onclick="return false" href="">
+                                Liên hệ
+                            </a>
+                        </li>
+                        <li class="contact header-right__item">
+                            <a href="page_Game.html" target="_blank">
+                                Giải trí
+                            </a>
+                        </li>
+                        <li class="shop header-right__item">
+                            <span>
+                                Cửa hàng
+                            </span>
+                            <span class="header-right__item-more">
+                                <span class="header-right__item-icon__add">
+                                    +
+                                </span>
+                                <span style="display: none" class="header-right__item-icon__sub">
+                                    -
+                                </span>
+                            </span>
+                            <ul class="header-right__item-more-list">
+                                <li class="header-right__item-more-item">
+                                    <a target="_blank" href="shopee.html">
+                                        Mua bán chó
+                                    </a>
+                                </li>
+                                <li class="header-right__item-more-item">
+                                    <a target="_blank" href="catShop.html">
+                                        Mua bán mèo
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="header-right__search">
+                        <div onclick="openSearch()" class="header-right__search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="search-960">
+                        <input placeholder="Tìm kiếm" type="text" class="search-960__input">
+                        <div class="search-960__icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-box">
+                <div onclick="closeSearch()" class="search-box__close">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="search-box__form">
+                    <input type="text" class="search-box__form-input" name="search" placeholder=" ">
+                    <label class="search-box__form-label" for="name">Type then hit enter to search</label>
+                </div>
+            </div>
+        </header>
+
+        <section class="main">
+
+            <div class="main-top">
+                <div class="main-top__content">
+                    <h2 class="main-top__title">
+                        H&M'S PET
+                    </h2>
+                    <h3 class="main-top__sub-title">
+                        Cổng thông tin về thú cưng
+                    </h3>
+                </div>
+            </div>
+
+            <div class="main-introduce reveal">
+                <div class="main-introduce__grid grid">
+                    <h3 class="main-title">
+                        Giới thiệu
+                    </h3>
+                    <div class="main-introduce__content">
+                        <div class="main-introduce__content-text">
+                            <div class="main-introduce__content-text-paragraph">
+                                <span>
+                                    H&M's Pet
+                                </span>
+                                được xây dựng dựa trên tiêu chí là cổng thông tin 
+                                hoàn toàn miễn phí về các vấn đề xung quanh động vật, 
+                                đặc biệt là thú cưng, cụ thể như các bệnh về chó mèo, 
+                                các thực phẩm dinh dưỡng dành cho thú cưng, cách chăm sóc
+                                và điều trị bệnh cho chó mèo ...
+                            </div>
+                            <div class="main-introduce__content-text-paragraph">
+                                Tất cả những thông tin tại đây được sưu tầm và 
+                                tham khảo từ nhiều nguồn khác nhau có chọn lọc, 
+                                bên cạnh đó còn là trải nghiệm thực tế của chúng tôi 
+                                trong quá trình nuôi thú cưng để đem đến cho độc giả
+                                 những thông tin chính xác và hữu ích nhất.
+                            </div>
+                        </div>
+                        <div class="main-introduce__content-img">
+                            <img width="100%" src="./assets/img/intro-banner.jpg" alt="banner" width="100%">
+                        </div>
+                    </div>
+                    <span class="main-introduce__btn">
+                        <a href="intro.html" class="main-introduce__btn-link" target="_blank">
+                            Chi tiết
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="main-pet reveal">
+                <div class="main-pet__grid grid">
+                    <h3 class="main-title">
+                        Thú cưng
+                    </h3>
+                    <ul class="main-pet__list">
+                        <li class="main-pet__item">
+                            <div class="main-pet__item-img">
+                                <img src="./assets/img/pet-banner-dog.jpg" alt="pet-banner" class="">
+                            </div>
+                            <div class="main-pet__item-info">
+                                <div class="main-pet__item-info-text">
+                                    Cần tìm một người bạn trung thành ?
+                                </div>
+                                <div class="main-pet__item-info-more">
+                                    <a href="./page_Dog.html" class="main-pet__item-info-more__link">
+                                        more  
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-pet__item">
+                            <div class="main-pet__item-img">
+                                <img width="100%" src="./assets/img/pet-banner-cat.jpg" alt="pet-banner" class="">
+                            </div>
+                            <div class="main-pet__item-info">
+                                <div class="main-pet__item-info-text">
+                                    Meowwww, trẫm đói ...
+                                </div>
+                                <div class="main-pet__item-info-more">
+                                    <a href="cats.html" class="main-pet__item-info-more__link">
+                                        more
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-takecare reveal">
+                <div class="main-takecare__grid grid">
+                    <div class="main-takecare__left">
+                        <div class="main-takecare__left-img">
+                            <img width="100%" src="./assets/img/takecare.svg" alt="takecare">
+                        </div>
+                    </div>
+                    <div class="main-takecare__right">
+                        <div class="main-takecare__right-content">
+                            <div class="main-takecare__right-text">
+                                Quan tâm, chăm sóc thú cưng của bạn nhiều hơn.
+                            </div>
+                            <div class="main-takecare__right-more">
+                                <a href="./page_Take_Care.html" target="_blank" class="main-takecare__right-more-link">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="main-takecare__right-title">
+                            Chăm sóc
+                        </h3>
+                        <div class="main-takecare__right-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-promise reveal">
+                <div class="main-promise__grid grid">
+                    <h3 class="main-title">
+                        Cam kết
+                    </h3>
+                    <div class="main-promise__text">
+                        H&M's Pet được định hình là trang web thông tin
+                        về động vật, thú cưng. Chúng tôi cam kết tất 
+                        cả nội dung cung cấp trên trang đều được trích dịch từ 
+                        các nguồn web nước ngoài rõ ràng, có ý kiến và trích 
+                        dẫn thú y. Từ đó mang lại những giải pháp chính xác nhất
+                        cho người xem.
+                    </div>
+                    <ul class="main-promise__list">
+                        <li class="main-promise__item">
+                            <div class="main-promise__item-img">
+                                <img src="./assets/img/promise-item-1.png" alt="content">
+                            </div>
+                            <div class="main-promise__item-content">
+                                <div class="main-promise__item-content-title">
+                                    Nội dung
+                                </div>
+                                <div class="main-promise__item-content-text">
+                                    Nội dung chất lượng, chính xác, có nguồn uy tín, có thú y xem xét.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-promise__item">
+                            <div class="main-promise__item-img">
+                                <img src="./assets/img/promise-item-2.png" alt="content">
+                            </div>
+                            <div class="main-promise__item-content">
+                                <div class="main-promise__item-content-title">
+                                    Sản phẩm
+                                </div>
+                                <div class="main-promise__item-content-text">
+                                    Sản phẩm được gợi ý công bằng, được phân tích review chi tiết chính xác.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-promise__item">
+                            <div class="main-promise__item-img">
+                                <img src="./assets/img/promise-item-3.png" alt="content">
+                            </div>
+                            <div class="main-promise__item-content">
+                                <div class="main-promise__item-content-title">
+                                    Hỗ trợ
+                                </div>
+                                <div class="main-promise__item-content-text">
+                                    Hỗ trợ hết mình, hướng dẫn những nguồn khám bệnh thú cưng uy tín, chất lượng.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-contact reveal">
+                <div class="main-contact__grid grid">
+                    <h3 class="main-title">
+                        Liên hệ
+                    </h3>
+                    <div class="main-contact__main">
+                        <div class="main-contact__main-row1">
+                            <div class="main-contact__main-left">
+                                <div class="main-contact__main-left__item">
+                                    <div class="main-contact__main-left__item-icon">
+                                        <i class="fas fa-globe-europe"></i>
+                                    </div>
+                                    <div class="main-contact__main-left__item-content">
+                                        Việt Nam
+                                    </div>
+                                </div>
+                                <div class="main-contact__main-left__item">
+                                    <div class="main-contact__main-left__item-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="main-contact__main-left__item-content">
+                                        Phone: +00 121212
+                                    </div>
+                                </div>
+                                <div class="main-contact__main-left__item">
+                                    <div class="main-contact__main-left__item-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="main-contact__main-left__item-content">
+                                        Mail: mail@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-contact__main-right">
+                                <div class="main-contact__main-right__row1">
+                                    <input type="text" name="name" placeholder="Họ tên" class="main-contact__main-right__row1-input">
+                                    <input type="email" name="email" placeholder="Email" class="main-contact__main-right__row1-input">
+                                </div>
+                                <div class="main-contact__main-right__row2">
+                                    <input type="text" name="message" placeholder="Message" class="main-contact__main-rightright__row2-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-contact__submit">
+                            <div class="main-contact__btn">
+                                <a href="" onclick="return false" class="main-contact__btn-link">
+                                    Send
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-map">
+
+            </div>
+        </section>
+
+
+
+        <footer class="footer">
+            <section class="footer-content grid">
+                <div class="footer-left">
+                    <div class="footer-left__logo">
+                        <img src="./assets/img/logo-footer1.png" alt="" class="footer-left__logo-img" width="100%">
+                    </div>
+                    <div class="footer-left__content">
+                        H&M’s Pet là cổng thông tin hoàn toàn
+                        miễn phí về các vấn đề xung quanh chó và mèo.
+                    </div>
+                </div>
+                <div class="footer-main">
+                    <div class="footer__title">
+                        Danh sách trang
+                    </div>
+                    <ul class="footer-main__list">
+                        <li class="footer-main__item">
+                            Giới thiệu
+                        </li>
+                        <li class="footer-main__item">
+                            Chính sách bảo mật
+                        </li>
+                        <li class="footer-main__item">
+                            Điều khoản dịch vụ
+                        </li>
+                        <li class="footer-main__item">
+                            Liên hệ
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <div class="footer__title">
+                        Tải trên ứng dụng
+                    </div>
+                    <div class="footer__download">
+                        <div class="footer__download-qr">
+                            <img src="./assets/img/QR.png" alt="">
+                        </div>
+                        <div class="footer__download-icon">
+                            <div class="footer__download-icon__GGPlay">
+                                <img src="./assets/img/GGPlay.png" alt="">
+                            </div>
+                            <div class="footer__download-icon__Appstore">
+                                <img src="./assets/img/Appstore.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__more">
+                        <ul class="footer__social">
+                            <li class="footer__social-item">
+                                <a href="" class="footer__social-item__link">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="" class="footer__social-item__link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="" class="footer__social-item__link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+            </section>
+            <div class="footer-copyright">
+                Copyright &#169; 2021 - Bản quyền thuộc về H&M's Pet
+            </div>
+        </footer>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+    <script>
+
+        scrollToComponent($('.home'), $('.main-top'))
+        scrollToComponent($('.intro'), $('.main-introduce'))
+        scrollToComponent($('.pet'), $('.main-pet'))
+        scrollToComponent($('.contact'), $('.main-contact'))
+
+        //reveal scroll
+        const revealItems = $$('.reveal')
+        window.addEventListener('scroll', reveal)
+
+        //reveal
+        function reveal(){
+            revealItems.forEach((item) => {
+                const windowHeight = window.innerHeight
+                const revealTop = item.getBoundingClientRect().top
+
+                // scrollY - offsetTop < innerHeight
+                
+                if (revealTop < windowHeight - 100) {
+                    item.classList.add('active')
+                } 
+                //reveal lại khi kéo lên xong lại kéo xuống =))
+                else {
+                    item.classList.remove('active')
+                }
+            })
+        }
+
+        //esc thoát search-box
+        window.onkeydown = function(e){
+            if(e.which == 27 && $('.search-box').style.display !== 'none') {
+                    $('.search-box').style.display = 'none'
+                    document.body.style.overflow = 'auto'
+                }
+        }
+
+    </script>
+</body>
+</html>

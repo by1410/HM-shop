@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop cats</title>
+        <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/pageCatShop_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Jquery -->
+        <script src="./assets/js/jquery-3.6.0.min.js"></script>
+        <script src="./assets/js/commentCatShop.js"></script>
+    </head>
+    <body>
+        <div class="goToTop">
+            <a id="gototop" href="javascript:;">
+                <i class="fas fa-arrow-circle-up"></i>
+            </a>
+        </div>
+
+        <div class="app">
+            <div class="header">
+                <div class="header-tab">
+                    <div class="header-tab-content">
+                        <div class="header-tab-content__logo">
+                            <a href="index.html">
+                                <img src="./assets/img/logo-demo-shopcat.png" alt="Logo Team" width="80%">
+                            </a>
+                        </div>
+                        <div class="hear-tab-content__search">
+                            <div class="hear-tab-content__search-input">
+                                <input type="text" name="toSearch" placeholder="Bạn cần tìm..." size="50">
+                            </div>
+                            <div class="hear-tab-content__search-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-tab-content__reponsive-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="header-tab-content__menu">
+                        <nav>
+                            <ul class="header-tab-content__menu-list">
+                                <li class="header-tab-content__menu-list__item scroll-btn">
+                                    <span>
+                                        <i class="fas fa-cat"></i>
+                                    </span>
+                                    <a id="pets" onclick="return false" href="#pet">Thú cưng</a>
+                                </li>
+                                <li class="header-tab-content__menu-list__item scroll-btn">
+                                    <span>
+                                        <i class="fas fa-archive"></i>
+                                    </span>
+                                    <a id="stuffs" onclick="return false" href="#stuff">Vật dụng</a>
+                                </li>
+                                <li class="header-tab-content__menu-list__item scroll-btn">
+                                    <span>
+                                        <i class="fas fa-capsules"></i>
+                                    </span>
+                                    <a id="medicines" onclick="return false" href="#medicine">Thuốc bổ & trị liệu</a>
+                                </li>
+                                <li class="header-tab-content__menu-list__item scroll-btn">
+                                    <span>
+                                        <i class="fas fa-luggage-cart"></i>
+                                    </span>
+                                    <a id="buys" onclick="return false" href="#buy">Thanh toán</a>
+                                </li>
+                                <li class="header-tab-content__menu-list__item scroll-btn">
+                                    <span>
+                                        <i class="fas fa-user-edit"></i>
+                                    </span>
+                                    <a id="comments" onclick="return false" href="#comment">Đánh giá</a>
+                                </li>
+                                <li class="header-tab-content__menu-list__item">
+                                    <span>
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                    <input type="text" name="toSearch" placeholder="Bạn cần tìm..." size="50">
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="main-content">
+                    <div class="main-content-classify__pet">
+                        <div id="pet" class="main-content-classify__pet-title scroll-component">
+                            <h3>
+                                Những chiếc mèo cute lạc lối
+                            </h3>
+                        </div>
+                        <div class="main-content-classify__pet-item cat">
+                            <!-- catShop.js -->
+                        </div>
+                        <div id="stuff" class="main-content-classify__pet-title scroll-component">
+                            <h3>
+                                Vật dụng
+                            </h3>
+                        </div>
+                        <div class="main-content-classify__pet-item stuff">
+                            <!-- catShop.js -->
+                        </div>
+                        <div id="medicine" class="main-content-classify__pet-title scroll-component">
+                            <h3>
+                                Thuốc bổ và trị liệu
+                            </h3>
+                        </div>
+                        <div class="main-content-classify__pet-item medicine">
+                            <!-- catShop.js -->
+                        </div>
+                        <div id="buy" class="main-content-classify__pet-title scroll-component">
+                            <h3>
+                                Thanh toán
+                            </h3>
+                        </div>
+                        <div class="main-content-classify__pet-item buy">
+                            <div class="main-content-classify__pet-item-title">
+                                Vì tình hình dịch covid, trại hiện tại không 
+                                thể vận chuyển hàng hóa, chân thành xin lỗi 
+                                quý khách vì sự bất tiện này, mong hẹn gặp 
+                                lại quý khách lần sau.
+                            </div>
+                            <div class="main-content-classify__pet-item-img">
+                                <img src="./assets/img/cat-shop/loading-cat-paper.gif" alt="" width="10%">
+                            </div>
+                        </div>
+                        <div id="comment" class="main-content-classify__pet-title scroll-component">
+                            <h3>
+                                Đánh giá
+                            </h3>
+                        </div>
+                        <div class="main-content-comment">
+                            <div class="client">
+                                <input type="text" placeholder="Tên bạn là..." class="col20" id="add-name">
+                                <input type="text" placeholder="Nhập bình luận..." class="col60" id="add-comment">
+                                <input type="button" value="Thêm" class="" id="add-item">
+                            </div>
+                            <div class="ctrl">
+                                <div>
+                                    <div class="item">
+                                        <div class="avatar col10">
+                                            <img src="./assets/img/cat-shop/avt-2.jpg" alt="avatar" width="100%">
+                                        </div>
+                                        <div class="content-comment col80">
+                                            <div class="name_User">Cplusplus</div>
+                                            <div class="content-comment-text">Có bán mèo ta không bạn ?</div>
+                                        </div>
+                                        <div class="delete col10">
+                                            <input type="button" name="delete" value="Xóa">
+                                        </div>
+                                    </div>
+                                    <div class="item-reply">
+                                        <div class="content-comment_reply">
+                                            <div class="avatar col10">
+                                                <img src="./assets/img/cat-shop/avt-1.jpg" alt="avatar" width="100%">
+                                            </div>
+                                            <div class="content-comment col80">
+                                                <div class="name_User">Rogit20</div>
+                                                <div class="content-comment-text">Có nha bạn nhưng hiện mèo chưa đủ tháng. Mong bạn thông cảm :3</div>
+                                            </div>
+                                            <div class="delete col10">
+                                                <input type="button" name="delete" value="Xóa">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-comment_reply write">
+                                        <input type="text" placeholder="Tên bạn là..." class="col20" id="add-name-reply">
+                                        <input type="text" placeholder="Nhập bình luận..." class="col60" id="add-comment-reply">
+                                        <input type="button" value="Phản hồi" class="" id="add-item-reply">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="item">
+                                        <div class="avatar col10">
+                                            <img src="./assets/img/cat-shop/avt-2.jpg" alt="avatar" width="100%">
+                                        </div>
+                                        <div class="content-comment col80">
+                                            <div class="name_User">Javascript</div>
+                                            <div class="content-comment-text">Shop gì bán mắc như quỷ</div>
+                                        </div>
+                                        <div class="delete col10">
+                                            <input type="button" name="delete" value="Xóa">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="item">
+                                        <div class="avatar col10">
+                                            <img src="./assets/img/cat-shop/avt-2.jpg" alt="avatar" width="100%">
+                                        </div>
+                                        <div class="content-comment col80">
+                                            <div class="name_User">IT02</div>
+                                            <div class="content-comment-text">Bên bạn có muốn nhập mèo Doraemon không =))</div>
+                                        </div>
+                                        <div class="delete col10">
+                                            <input type="button" name="delete" value="Xóa">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="footer-container-col col1">
+                        <div class="footer-container-col__wrapper">
+                            <h4>Hỗ trợ khách hàng</h4>
+                            <p>
+                                <strong>Tổng đài CSKH: (000).0000.0000</strong>
+                                <br>
+                                <strong>Hotline: 000.000.0000</strong>
+                                <br>
+                                <small>(Hỗ trợ 24/7 kể cả ngày nghỉ và ngày lễ)</small>
+                            </p>
+                        </div>
+                        <div class="footer-container-col__content">
+                            <ul class="footer-container-col__content-list">
+                                <li>
+                                    Cửa hàng thú cưng HMSPet.net Địa chỉ tin cậy để 
+                                    bạn tìm kiếm cho mình một người bạn thú cưng đồng 
+                                    hành đáng yêu, phụ kiện cho thú cưng chất lượng 
+                                    giá cạnh tranh....
+                                </li>
+                                <li>
+                                    Đ/C: Trong Tim Minh, 
+                                    Tp Hồ Chí Minh, Việt Nam, Trái Đất
+                                </li>
+                                <li>
+                                    Email: info@hmspetshop.net
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-container-col col2">
+                        <div class="footer-container-col__wrapper">
+                            <h3>Chính sách mua hàng</h3>
+                        </div>
+                        <div class="footer-container-col__content">
+                            <ul class="footer-container-col__content-list">
+                                <li class="footer-container-col__content-list-item">Điều Khoản Sử Dụng</li>
+                                <li class="footer-container-col__content-list-item">Chính Sách Bảo Mật</li>
+                                <li class="footer-container-col__content-list-item">Vận Chuyển & Giao Nhận</li>
+                                <li class="footer-container-col__content-list-item">Đặt Hàng & Thanh Toán</li>
+                                <li class="footer-container-col__content-list-item">Chính Sách Đổi Trả</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-container-col col3">
+                        <div class="footer-container-col__wrapper">
+                            <h5>Tải trên ứng dụng</h5>
+                        </div>
+                        <div class="footer-container-col__content">
+                            <div class="footer-container-col__content__download">
+                                <div class="footer-container-col__content__download-qr">
+                                    <img src="./assets/img/QR.png" alt="download by QR">
+                                </div>
+                                <div  class="footer-container-col__content__download-icon">
+                                    <div  class="footer-container-col__content__download-icon__Ggplay">
+                                        <img src="./assets/img/GGPlay.png" alt="Google Play">
+                                    </div>
+                                    <div  class="footer-container-col__content__download-icon__Appstore">
+                                        <img src="./assets/img/Appstore.png" alt="App Store">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-container-col__content__social">
+                                <ul class="footer-container-col__content__social-list">
+                                    <li class="footer-container-col__content__social-list-item">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </li>
+                                    <li class="footer-container-col__content__social-list-item">
+                                        <i class="fab fa-instagram"></i>
+                                    </li>
+                                    <li class="footer-container-col__content__social-list-item">
+                                        <i class="fab fa-twitter"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-container-end">
+                    Copyright © 2021 - Bản quyền thuộc về H&M's Pet
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/js/cats-shop.js"></script>
+        <script>
+            const iconMenu = document.querySelector('.header-tab-content__reponsive-icon')
+            const listMenu = document.querySelector('.header-tab-content__menu')
+            
+            // open - close menu list
+            iconMenu.onclick = function () {
+                if (!(listMenu.classList.contains('active'))) {
+                    listMenu.classList.add('active')
+                }
+                else {
+                    listMenu.classList.remove('active')
+                }
+            }
+
+            // order advert
+            function advert() {
+                alert("Sản phẩm đã được ghi nhận.")
+            }
+
+            // setup time comment
+
+        </script>
+    </body>
+</html>
